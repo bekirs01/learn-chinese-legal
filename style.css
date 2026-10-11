@@ -1,0 +1,309 @@
+:root {
+  --paper: #f4efe6;
+  --paper-deep: #ebe4d6;
+  --ink: #1a1f21;
+  --ink-soft: #4a5356;
+  --teal: #1b6568;
+  --teal-deep: #154f52;
+  --accent: #c46a3c;
+  --card: #fffdf8;
+  --line: rgba(26, 31, 33, 0.12);
+  --shadow: 0 18px 40px rgba(26, 31, 33, 0.07);
+  --max: 46rem;
+  --display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--teal-deep);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.5rem 0.8rem;
+}
+
+.skip:focus {
+  top: 0.6rem;
+}
+
+.top {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(16px);
+  background: rgba(244, 239, 230, 0.92);
+  border-bottom: 1px solid var(--line);
+}
+
+.top-inner,
+.wrap,
+.foot-inner {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.top-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4.2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mark {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.55rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  font-family: var(--display);
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.brand small {
+  display: block;
+  font-weight: 500;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.1rem;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a[aria-current="page"] {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.hero,
+.page {
+  padding: 3.2rem 0 4.5rem;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero .seal {
+  width: 5.5rem;
+  height: 5.5rem;
+  margin: 0 auto 1.4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 1.2rem;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  font-family: var(--display);
+  font-size: 2.6rem;
+}
+
+.kicker {
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--display);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin: 0.35rem 0 0.8rem;
+}
+
+.lede {
+  max-width: 38rem;
+  margin: 0 auto 2rem;
+  color: var(--ink-soft);
+  font-size: 1.12rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.78rem 1.25rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--teal);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--teal-deep);
+  color: #fff;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+  text-align: left;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 1.1rem;
+  padding: 1.25rem 1.3rem;
+  box-shadow: var(--shadow);
+}
+
+.card h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.25rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.page h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.meta {
+  color: var(--ink-soft);
+  margin-bottom: 1.8rem;
+}
+
+article {
+  width: min(var(--max), 100%);
+}
+
+article h2 {
+  margin-top: 2.1rem;
+  font-size: 1.4rem;
+}
+
+article h3 {
+  margin-top: 1.3rem;
+  font-size: 1.12rem;
+}
+
+article ul,
+article ol {
+  padding-left: 1.2rem;
+}
+
+.rule {
+  height: 3px;
+  width: 4.5rem;
+  background: var(--teal);
+  border: 0;
+  margin: 0 0 1.4rem;
+}
+
+.note {
+  background: var(--paper-deep);
+  border-left: 3px solid var(--accent);
+  padding: 0.9rem 1rem;
+  border-radius: 0 0.7rem 0.7rem 0;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 1.6rem 0 2.2rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.foot-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .top-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem 0;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero,
+  .page {
+    padding-top: 2rem;
+  }
+}

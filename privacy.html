@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Learn Chinese</title>
+    <meta
+      name="description"
+      content="Privacy Policy for the Learn Chinese app. On-device learning progress, no accounts, no analytics, device text-to-speech."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="top">
+      <div class="top-inner">
+        <a class="brand" href="index.html">
+          <span class="mark" aria-hidden="true">汉</span>
+          <span>Learn Chinese <small>Mandarin for beginners</small></span>
+        </a>
+        <nav aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="privacy.html" aria-current="page">Privacy</a>
+          <a href="support.html">Support</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="page">
+      <div class="wrap">
+        <article>
+          <p class="kicker">Legal</p>
+          <h1>Privacy Policy</h1>
+          <p class="meta">
+            Effective date: 11 October 2026<br />
+            Product: Learn Chinese (Learn Chinese for Beginners)<br />
+            iOS / iPadOS bundle ID: com.bekirsucikaran.learnchinese<br />
+            watchOS bundle ID: com.bekirsucikaran.learnchinese.watchkitapp
+          </p>
+          <hr class="rule" />
+
+          <h2>1. Who we are</h2>
+          <p>
+            This policy describes the Learn Chinese app published by Bekir
+            Sucikaran (GitHub: bekirs01). It applies to the iPhone, iPad, and
+            Apple Watch companion in the current shipping design.
+          </p>
+          <p>
+            Support is provided through GitHub Issues on the public legal site
+            repository. See
+            <a href="support.html">Support</a>.
+          </p>
+
+          <h2>2. Application identification</h2>
+          <p>
+            Learn Chinese is an offline-first beginner Mandarin course. Lessons
+            use Simplified Chinese characters, Hanyu Pinyin, and the four tones
+            plus the neutral tone. The app does not require an account and does
+            not include a developer-operated cloud service for learning content.
+          </p>
+
+          <h2>3. Information collected</h2>
+          <p>
+            The app does not collect personal information for analytics,
+            advertising, accounts, or crash reporting implemented by the
+            developer.
+          </p>
+          <p>Verified in the current source:</p>
+          <ul>
+            <li>No user accounts or sign-in</li>
+            <li>No analytics or advertising SDKs</li>
+            <li>No tracking (<code>NSPrivacyTracking</code> is false)</li>
+            <li>No collected data types listed in the Apple privacy manifest</li>
+            <li>No Firebase, Supabase, or other backend for lessons</li>
+            <li>No in-app purchases or StoreKit product catalog</li>
+            <li>No microphone, camera, location, or photo library permission</li>
+          </ul>
+          <p>
+            Apple’s App Privacy nutrition labels should match this: data is not
+            collected by the app for tracking or developer-side profiling.
+          </p>
+
+          <h2>4. Local educational progress</h2>
+          <p>
+            Words you mark as learned, quiz mistakes, and related study state
+            stay on the device using Apple UserDefaults / Flutter
+            <code>shared_preferences</code> (privacy manifest reason CA92.1).
+            This data is used only to run the app on that device. It is not
+            uploaded to a developer server.
+          </p>
+
+          <h2>5. Local preferences and favorites</h2>
+          <p>The same on-device store may hold:</p>
+          <ul>
+            <li>Translation language for meanings and interface copy</li>
+            <li>Favorite words and phrases</li>
+            <li>Sound-effect and haptics switches</li>
+            <li>A short Apple Watch learning list you choose on iPhone</li>
+          </ul>
+          <p>
+            The Watch companion keeps a local cache of the items you synced so
+            cards can appear when the iPhone is not nearby. WatchConnectivity
+            exchanges that list between your paired devices. It is not a
+            developer cloud account.
+          </p>
+
+          <h2>6. Audio and text-to-speech</h2>
+          <p>
+            This version does <strong>not</strong> bundle licensed studio
+            recordings of Mandarin lessons. There is no
+            <code>assets/audio</code> lesson pack in the app.
+          </p>
+          <p>
+            When you tap the speaker control, the app asks the operating system
+            to speak Simplified Chinese with the voices installed on the device
+            (<code>flutter_tts</code>, preferred locale zh-CN, Tingting when
+            available). The app does not send your microphone audio anywhere. It
+            does not operate a network text-to-speech service.
+          </p>
+          <p>
+            Short bundled sound effects (tap, correct, incorrect) play through
+            <code>audioplayers</code> from files shipped with the app. They are
+            interface sounds, not vocabulary recordings.
+          </p>
+          <p>
+            Apple or Google may process speech according to the voice you
+            installed in system Settings. Enhanced or downloaded Mandarin voices
+            are managed by the operating system, not by a developer server.
+            The Apple Watch companion does not play pronunciation audio.
+          </p>
+
+          <h2>7. External services and third-party code</h2>
+          <p>
+            Runtime libraries include Flutter, <code>shared_preferences</code>,
+            <code>audioplayers</code>, <code>flutter_tts</code>, and
+            <code>characters</code>. They run on the device. They are not used
+            here as analytics.
+          </p>
+          <p>
+            This website is hosted on GitHub Pages. Visiting these legal pages
+            may cause GitHub to process standard web logs under GitHub’s own
+            privacy terms. The mobile app does not load this website in order to
+            function.
+          </p>
+
+          <h2>8. Apple purchases</h2>
+          <p>
+            Learn Chinese is intended as a paid App Store download. The current
+            build has no in-app purchases, subscriptions, or Restore Purchases
+            screen. If you buy the app from Apple, Apple processes the payment
+            under Apple’s terms. The developer does not receive your full
+            payment card details through this app.
+          </p>
+
+          <h2>9. Analytics and tracking</h2>
+          <p>
+            The app does not include analytics, advertising identifiers, or
+            tracking domains. In-app privacy copy states that there is no
+            analytics or tracking.
+          </p>
+
+          <h2>10. Data retention</h2>
+          <p>
+            On-device study data remains until you delete it in the app where
+            that control exists, or until you delete the app. The developer does
+            not retain a cloud copy of your progress.
+          </p>
+
+          <h2>11. Data removal</h2>
+          <p>
+            Delete the app from the iPhone, iPad, or Apple Watch to remove local
+            progress, favorites, and Watch cache on that device. There is no
+            cloud account to erase on a developer server.
+          </p>
+
+          <h2>12. Children’s privacy</h2>
+          <p>
+            The app is designed for a 4+ education audience and does not collect
+            personal information from children. Do not enter a child’s contact
+            details into GitHub Issues; describe the product problem only.
+          </p>
+
+          <h2>13. International considerations</h2>
+          <p>
+            Lesson content is stored in the app bundle. Learner translations
+            (interface and meanings) also ship in the bundle. Because progress
+            is local, the developer does not operate a cross-border student
+            database. If you contact support on GitHub, GitHub may process that
+            message on its infrastructure.
+          </p>
+
+          <h2>14. Security</h2>
+          <p>
+            The app does not transmit lesson progress to a developer API.
+            Device storage uses the operating system’s ordinary app sandbox.
+            Keep the device passcode enabled. No method is perfectly secure.
+          </p>
+
+          <h2>15. Policy changes</h2>
+          <p>
+            If a future version adds accounts, cloud sync, in-app purchases,
+            analytics, or networked speech, this policy will be updated before
+            that version is shipped, and the effective date will change.
+          </p>
+
+          <h2>16. Contact</h2>
+          <p>
+            For privacy questions about Learn Chinese, open a GitHub Issue on
+            the public legal repository (a GitHub account is required):
+          </p>
+          <p>
+            <a href="https://github.com/bekirs01/learn-chinese-legal/issues/new"
+              >github.com/bekirs01/learn-chinese-legal/issues</a
+            >
+          </p>
+          <p>Related: <a href="support.html">Support page</a>.</p>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="foot-inner">
+        <span>© 2026 Bekir Sucikaran</span>
+        <span>
+          <a href="privacy.html">Privacy</a>
+          ·
+          <a href="support.html">Support</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
